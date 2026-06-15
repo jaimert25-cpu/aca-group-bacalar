@@ -33,7 +33,6 @@ export function GalleryProvider({ children }: { children: React.ReactNode }) {
     [list.length]
   );
 
-  // bloquear scroll de fondo mientras el visor está abierto
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
     return () => {
@@ -41,7 +40,6 @@ export function GalleryProvider({ children }: { children: React.ReactNode }) {
     };
   }, [open]);
 
-  // navegación con teclado
   useEffect(() => {
     if (!open) return;
     const onKey = (e: KeyboardEvent) => {
@@ -73,7 +71,6 @@ export function GalleryProvider({ children }: { children: React.ReactNode }) {
         <button className="prev" onClick={() => step(-1)} aria-label="Anterior">
           ‹
         </button>
-        {/* imagen del visor: <img> normal porque cambia dinámicamente */}
         {current && <img src={current.src} alt={current.cap} />}
         <button className="next" onClick={() => step(1)} aria-label="Siguiente">
           ›
