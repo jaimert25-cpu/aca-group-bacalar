@@ -68,3 +68,4 @@ No tocas el diseño: la tarjeta, el badge "Ver fotos" y el visor se arman solos.
 - Fotos de **Aldea Chee-eek**.
 - Decidir las 2 fotos de Maya que quedaron fuera (bandera / comensal).
 - Instagram de Choco Peek y Cache Cache.
+Deploy limpio
