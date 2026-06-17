@@ -37,6 +37,12 @@ export const galleries: Record<string, Photo[]> = {
     { src: "/images/tropic-3.jpg", cap: "Tropic Bacalar · El hotel entre palmeras" },
     { src: "/images/tropic-4.jpg", cap: "Tropic Bacalar · Michelada con vista a la laguna" },
   ],
+  aldea: [
+    { src: "/images/aldea-1.jpg", cap: "Aldea Chee-eek · Alberca natural entre la selva" },
+    { src: "/images/aldea-2.jpg", cap: "Aldea Chee-eek · Yoga bajo la gran palapa" },
+    { src: "/images/aldea-3.jpg", cap: "Aldea Chee-eek · Cabaña con vigas de madera" },
+    { src: "/images/aldea-4.jpg", cap: "Aldea Chee-eek · Tinas de piedra al aire libre" },
+  ],
 };
 
 // ---- Hospedaje ----
@@ -82,8 +88,8 @@ export const hotels: Hotel[] = [
     desc: "Cabañas independientes entre jardines, pensadas para desconectarse. Intimidad y naturaleza a un paso del centro de Bacalar.",
     price: "$1,050",
     instagram: "https://www.instagram.com/aldeacheeek",
-    gallery: null,
-    cover: null,
+    gallery: "aldea",
+    cover: "/images/aldea-1.jpg",
     tone: "t2",
   },
   {
