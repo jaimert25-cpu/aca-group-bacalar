@@ -1,7 +1,7 @@
 # Grupo ACA · Bacalar — Sitio en Next.js
 
 Sitio de marca del grupo hotelero, frente a la Laguna de los Siete Colores.
-Hecho con **Next.js 14 (App Router)** + **TypeScript**. Diseño data-driven:
+Hecho con **Next.js 16 (App Router)** + **TypeScript**. Diseño data-driven:
 todo el contenido vive en un solo archivo y los componentes lo recorren.
 
 ## Cómo correrlo en tu compu
@@ -11,6 +11,29 @@ npm install      # instala dependencias (una sola vez)
 npm run dev      # servidor de desarrollo en http://localhost:3000
 npm run build    # compila para producción (verifica que todo esté sano)
 ```
+
+### Retomar el trabajo día a día (después de reiniciar la compu)
+
+1. Abre **Visual Studio Code** → `File → Open Folder` → carpeta del proyecto
+   (`C:\Users\tpramirjai\proyectos\aca-group-bacalar`).
+2. Abre la terminal integrada: menú `Terminal → New Terminal` (atajo `` Ctrl+` ``).
+   Se abre ya dentro de la carpeta del proyecto.
+3. (Opcional, recomendado) trae lo último de GitHub:
+   ```bash
+   git pull
+   ```
+4. Arranca el servidor:
+   ```bash
+   npm run dev
+   ```
+   Verás `Ready` y la web estará en **http://localhost:3000**
+   (`Ctrl+clic` sobre el enlace para abrirla).
+5. Edita el código: cada vez que **guardes**, el navegador se actualiza solo.
+6. Para detener el servidor: en la terminal pulsa `Ctrl+C`.
+
+> **¿Hace falta `npm install` cada vez?** No. Solo vuelve a ejecutarlo si borras
+> `node_modules/`, cambias `package.json` (nueva librería), o un `git pull` toca
+> dependencias. Reiniciar la compu **no** borra nada.
 
 ## Estructura
 
