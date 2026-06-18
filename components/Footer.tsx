@@ -33,10 +33,8 @@ export default function Footer() {
           <div className="fcol">
             <h5>Contacto</h5>
             <ul>
-              <li><a href={`mailto:${site.email}`}>{site.email}</a></li>
-              <li><a href={site.whatsapp}>WhatsApp</a></li>
-              <li><a href="#">Instagram</a></li>
-              <li><a href="#">Facebook</a></li>
+              <li><a href={site.whatsapp} target="_blank" rel="noopener">WhatsApp</a></li>
+              <li><a href="https://www.instagram.com/tropicbacalar" target="_blank" rel="noopener">Instagram</a></li>
             </ul>
           </div>
         </div>
