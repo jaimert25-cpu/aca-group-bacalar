@@ -10,6 +10,12 @@ const Arrow = () => (
   </svg>
 );
 
+const WaIcon = () => (
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <path d="M4 4h16a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H9l-5 4V5a1 1 0 0 1 1-1z" />
+  </svg>
+);
+
 export default function Hotels() {
   const { openGallery } = useGallery();
 
@@ -58,18 +64,42 @@ export default function Hotels() {
                   <div className="meta">{h.meta}</div>
                   <h3>{h.name}</h3>
                   <p>{h.desc}</p>
-                  <div className="foot">
+                  <div className="foot" style={{ flexWrap: "wrap", rowGap: "14px" }}>
                     <div className="price">
                       {h.price} <span>MXN / noche · desde</span>
                     </div>
-                    <a
-                      className="more"
-                      href={h.instagram}
-                      target="_blank"
-                      rel="noopener"
-                    >
-                      Ver en Instagram <Arrow />
-                    </a>
+                    <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
+                      <a
+                        href={`${h.whatsapp}?text=${encodeURIComponent(
+                          `Hola, me interesa reservar en ${h.name}.`
+                        )}`}
+                        target="_blank"
+                        rel="noopener"
+                        aria-label={`Reservar ${h.name} por WhatsApp`}
+                        style={{
+                          display: "inline-flex",
+                          alignItems: "center",
+                          gap: "7px",
+                          background: "var(--teal)",
+                          color: "#fff",
+                          fontSize: ".8rem",
+                          letterSpacing: ".05em",
+                          padding: "10px 18px",
+                          borderRadius: "999px",
+                          whiteSpace: "nowrap",
+                        }}
+                      >
+                        <WaIcon /> WhatsApp
+                      </a>
+                      <a
+                        className="more"
+                        href={h.instagram}
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        Instagram <Arrow />
+                      </a>
+                    </div>
                   </div>
                 </div>
               </article>
