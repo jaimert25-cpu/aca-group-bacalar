@@ -53,6 +53,7 @@ export type Hotel = {
   desc: string;
   price: string;
   instagram: string;
+  whatsapp: string;       // enlace wa.me directo del hotel
   gallery: string | null; // clave de galleries, o null si aún no hay fotos
   cover: string | null;   // foto de portada
   tone: string;           // gradiente de respaldo si no hay foto
@@ -66,6 +67,7 @@ export const hotels: Hotel[] = [
     desc: "Dormitorios compartidos con nombres mayas y una habitación privada. El alma social y mochilera del grupo, con restaurante de terraza propio.",
     price: "$300",
     instagram: "https://www.instagram.com/maya_cabana",
+    whatsapp: "https://wa.me/529831010914",
     gallery: "maya",
     cover: "/images/maya-1.jpg",
     tone: "t1",
@@ -77,6 +79,7 @@ export const hotels: Hotel[] = [
     desc: "Habitaciones con nombres de frutas, varias con vista directa a la Laguna de los Siete Colores. Nuestro hotel junto al agua.",
     price: "$1,600",
     instagram: "https://www.instagram.com/tropicbacalar",
+    whatsapp: "https://wa.me/529837329998",
     gallery: "tropic",
     cover: "/images/tropic-3.jpg",
     tone: "t3",
@@ -88,6 +91,7 @@ export const hotels: Hotel[] = [
     desc: "Cabañas independientes entre jardines, pensadas para desconectarse. Intimidad y naturaleza a un paso del centro de Bacalar.",
     price: "$1,050",
     instagram: "https://www.instagram.com/aldeacheeek",
+    whatsapp: "https://wa.me/529831012802",
     gallery: "aldea",
     cover: "/images/aldea-1.jpg",
     tone: "t2",
@@ -99,6 +103,7 @@ export const hotels: Hotel[] = [
     desc: "Habitaciones dobles y triples, sencillas y cómodas. La opción cálida y accesible para descubrir Bacalar sin gastar de más.",
     price: "$650",
     instagram: "https://www.instagram.com/xaanbacalar_",
+    whatsapp: "https://wa.me/529837326048",
     gallery: "xaan",
     cover: "/images/xaan-1.jpg",
     tone: "t5",
@@ -223,6 +228,6 @@ export const destino = {
 // ---- Hero / contacto ----
 export const site = {
   hero: "/images/tropic-1.jpg",
-  whatsapp: "https://wa.me/521", // TODO: número real
+  whatsapp: "https://wa.me/529837329998", // principal: Tropic Bacalar
   email: "hola@acagroupbacalar.com",
 };
