@@ -9,10 +9,17 @@ export default function CTA() {
           Despierta frente a los <em>siete colores</em>
         </h2>
         <div className="actions reveal d2">
-          <a href="#reservar" className="pill primary">
+          <a href="#hospedaje" className="pill primary">
             Reservar ahora
           </a>
-          <a href={site.whatsapp} className="pill ghost">
+          <a
+            href={`${site.whatsapp}?text=${encodeURIComponent(
+              "Hola, me gustaría información y disponibilidad para reservar en Grupo ACA Bacalar."
+            )}`}
+            target="_blank"
+            rel="noopener"
+            className="pill ghost"
+          >
             Escríbenos por WhatsApp
           </a>
         </div>

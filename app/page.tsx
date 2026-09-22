@@ -1,6 +1,5 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import Booking from "@/components/Booking";
 import Manifesto from "@/components/Manifesto";
 import Hotels from "@/components/Hotels";
 import Muelle from "@/components/Muelle";
@@ -17,7 +16,6 @@ export default function Home() {
     <>
       <Header />
       <Hero />
-      <Booking />
       <Manifesto />
       <Hotels />
       <Muelle />

@@ -34,7 +34,7 @@ export default function Header() {
               {l.label}
             </a>
           ))}
-          <a href="#reservar" className="btn" onClick={() => setMenuOpen(false)}>
+          <a href="#hospedaje" className="btn" onClick={() => setMenuOpen(false)}>
             Reservar
           </a>
         </nav>
