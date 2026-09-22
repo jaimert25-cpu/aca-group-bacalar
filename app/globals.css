@@ -165,6 +165,14 @@
   .pill.ghost{border:1px solid rgba(255,255,255,.4)}
   .pill.ghost:hover{background:rgba(255,255,255,.1)}
 
+  .experiencias{background:var(--abyss);color:#fff}
+  .experiencias .eyebrow{color:var(--shallow)}
+  .exp-layout{display:grid;grid-template-columns:auto 1fr;gap:60px;align-items:center}
+  .exp-video{aspect-ratio:9/16;max-width:340px;width:100%;border-radius:24px;overflow:hidden;box-shadow:0 30px 70px -30px rgba(0,0,0,.6);background:var(--deep)}
+  .exp-video video{display:block;width:100%;height:100%;object-fit:cover}
+  .exp-text h2{font-size:clamp(2rem,4.4vw,3.4rem);max-width:16ch;font-weight:300;margin:20px 0 22px}
+  .exp-text p:not(.eyebrow){max-width:46ch;font-weight:300;color:rgba(255,255,255,.88);font-size:1.05rem;margin-bottom:30px}
+
   footer{background:var(--ink);color:rgba(255,255,255,.75);padding:80px 0 36px}
   .fgrid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:56px}
   .fcol .mark{font-family:var(--font-display);font-size:1.7rem;color:#fff;letter-spacing:.1em}
@@ -180,6 +188,8 @@
     .grid-hotels{grid-template-columns:1fr}
     .grid-dining{grid-template-columns:1fr}
     .depas .layout{grid-template-columns:1fr}
+    .exp-layout{grid-template-columns:1fr;gap:40px;justify-items:center}
+    .exp-text{text-align:left;width:100%}
     .destino .layout{grid-template-columns:1fr;gap:40px}
     .booking-card{grid-template-columns:1fr 1fr;gap:6px}
     .book-btn{grid-column:1/-1;width:100%}

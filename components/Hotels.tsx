@@ -16,13 +16,6 @@ const WaIcon = () => (
   </svg>
 );
 
-const MailIcon = () => (
-  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden="true">
-    <rect x="3" y="5" width="18" height="14" rx="2" />
-    <path d="m3 7 9 6 9-6" />
-  </svg>
-);
-
 export default function Hotels() {
   const { openGallery } = useGallery();
 
@@ -94,26 +87,6 @@ export default function Hotels() {
                         }}
                       >
                         <WaIcon /> WhatsApp
-                      </a>
-                      <a
-                        href={`mailto:${h.email}?subject=${encodeURIComponent(
-                          `Reserva en ${h.name}`
-                        )}`}
-                        aria-label={`Escribir a ${h.name} por correo`}
-                        style={{
-                          display: "inline-flex",
-                          alignItems: "center",
-                          gap: "7px",
-                          background: "var(--ink)",
-                          color: "#fff",
-                          fontSize: ".8rem",
-                          letterSpacing: ".05em",
-                          padding: "10px 18px",
-                          borderRadius: "999px",
-                          whiteSpace: "nowrap",
-                        }}
-                      >
-                        <MailIcon /> Correo
                       </a>
                       <a
                         className="more"

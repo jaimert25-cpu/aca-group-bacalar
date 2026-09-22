@@ -31,6 +31,17 @@ export const galleries: Record<string, Photo[]> = {
     { src: "/images/maya-3.jpg", cap: "Maya Cabaña · Bar de micheladas" },
     { src: "/images/maya-4.jpg", cap: "Maya Cabaña · Piña colada frente al mural" },
   ],
+  mayarest: [
+    { src: "/images/mayarest-1.jpg", cap: "Maya Cabaña · Tacos al pastor con piña" },
+    { src: "/images/mayarest-2.jpg", cap: "Maya Cabaña · Tacos de pastor recién hechos" },
+    { src: "/images/mayarest-3.jpg", cap: "Maya Cabaña · Tacos de camarón con queso" },
+    { src: "/images/mayarest-4.jpg", cap: "Maya Cabaña · Chilaquiles rojos con huevo" },
+    { src: "/images/mayarest-5.jpg", cap: "Maya Cabaña · Huevos con frijol y aguacate" },
+    { src: "/images/mayarest-6.jpg", cap: "Maya Cabaña · Sándwich con queso fundido" },
+    { src: "/images/mayarest-7.jpg", cap: "Maya Cabaña · Torta en pan artesanal" },
+    { src: "/images/mayarest-8.jpg", cap: "Maya Cabaña · Hotcakes con plátano y chocolate" },
+    { src: "/images/mayarest-9.jpg", cap: "Maya Cabaña · Michelada bien preparada" },
+  ],
   tropic: [
     { src: "/images/tropic-1.jpg", cap: "Tropic Bacalar · Jardín y muelle privado sobre la laguna" },
     { src: "/images/tropic-2.jpg", cap: "Tropic Bacalar · Muelle hacia la palapa sobre el agua" },
@@ -44,24 +55,12 @@ export const galleries: Record<string, Photo[]> = {
     { src: "/images/aldea-4.jpg", cap: "Aldea Chee-eek · Tinas de piedra al aire libre" },
   ],
   casa24: [
-    { src: "/images/casa24-1.jpg", cap: "Casa 24 · Habitación y estancia con cama matrimonial" },
-    { src: "/images/casa24-2.jpg", cap: "Casa 24 · Vista de la habitación y decoración" },
-    { src: "/images/casa24-3.jpg", cap: "Casa 24 · Baño completo y acabados" },
-    { src: "/images/casa24-4.jpg", cap: "Casa 24 · Área de estar y luz natural" },
-    { src: "/images/casa24-5.jpg", cap: "Casa 24 · Estudio amueblado y equipado" },
-    { src: "/images/casa24-6.jpg", cap: "Casa 24 · Detalle de habitación y clóset" },
-    { src: "/images/casa24-7.jpg", cap: "Casa 24 · Espacio acogedor para estancias" },
-    { src: "/images/casa24-8.jpg", cap: "Casa 24 · Habitación doble con vista al jardín" },
-    { src: "/images/casa24-9.jpg", cap: "Casa 24 · Cama y área de descanso" },
-    { src: "/images/casa24-10.jpg", cap: "Casa 24 · Acabados frescos y ventilación" },
-    { src: "/images/casa24-11.jpg", cap: "Casa 24 · Estudio cómodo y funcional" },
-    { src: "/images/casa24-12.jpg", cap: "Casa 24 · Interior amplio y luminoso" },
-    { src: "/images/casa24-13.jpg", cap: "Casa 24 · Detalles de la estancia" },
-    { src: "/images/casa24-14.jpg", cap: "Casa 24 · Habitación amueblada" },
-    { src: "/images/casa24-15.jpg", cap: "Casa 24 · Confort y tranquilidad" },
-    { src: "/images/casa24-16.jpg", cap: "Casa 24 · Espacio ideal para temporadas" },
-    { src: "/images/casa24-17.jpg", cap: "Casa 24 · Habitación con aire acondicionado y cama cómoda" },
-    { src: "/images/casa24-18.jpg", cap: "Casa 24 · Vista general del departamento" },
+    { src: "/images/casa24-1.jpg", cap: "Casa 24 · Alberca y camastros en el jardín" },
+    { src: "/images/casa24-2.jpg", cap: "Casa 24 · Estudio con cama y comedor equipado" },
+    { src: "/images/casa24-3.jpg", cap: "Casa 24 · Baño de cemento pulido" },
+    { src: "/images/casa24-4.jpg", cap: "Casa 24 · Acceso privado entre jardín" },
+    { src: "/images/casa24-5.jpg", cap: "Casa 24 · Palmeras y arquitectura blanca" },
+    { src: "/images/casa24-6.jpg", cap: "Casa 24 · Rincón verde junto a la alberca" },
   ],
 };
 
@@ -145,8 +144,8 @@ export const restaurants: Dining[] = [
     name: "Maya Cabaña Restaurante",
     cui: "Terraza · dentro del hostal",
     desc: "Cocina abierta en terraza y salón principal, dentro del hostal Maya Cabaña.",
-    gallery: "maya",
-    cover: "/images/maya-2.jpg",
+    gallery: "mayarest",
+    cover: "/images/mayarest-1.jpg",
     tone: "t2",
   },
   {
@@ -189,6 +188,7 @@ export type Depa = {
   u: string;
   desc: string;
   modalities: string[];
+  instagram: string;
   whatsapp: string;
   gallery: string | null;
   cover: string | null;
@@ -201,6 +201,7 @@ export const departamentos: Depa[] = [
     u: "Edificio · 8 departamentos",
     desc: "Estudios y departamentos de una recámara con vista al jardín, cómodos y bien ubicados. Espacios completamente equipados para estancias cortas o prolongadas.",
     modalities: ["Renta por noche", "Renta por mes"],
+    instagram: "https://www.instagram.com/casa24_bacalar",
     whatsapp: "https://wa.me/5219831208637",
     gallery: "casa24",
     cover: "/images/casa24-1.jpg",
@@ -226,9 +227,19 @@ export const muelle = {
   },
 };
 
+// ---- Experiencias ----
+export const experiencia = {
+  eyebrow: "La experiencia ACA",
+  title: "Llega volando a tu masaje en Aldea Chee-eek",
+  desc: "Un masaje entre la selva, a un vuelo de distancia. Bienestar y calma en el corazón de Bacalar.",
+  video: "/experiencia.mp4",
+  whatsapp: "https://wa.me/529831012802",
+};
+
 // ---- Bacalar (el destino) ----
 export const destino = {
   eyebrow: "El destino",
+  image: "/images/bacalar-1.jpg",
   title: "Bacalar, el Pueblo Mágico del agua",
   desc: "A orillas de una de las lagunas más bellas de México, Bacalar combina naturaleza, cenotes, fuerte histórico y una calma que la diferencia de la Riviera Maya. Grupo ACA es tu base para descubrirla.",
   features: [

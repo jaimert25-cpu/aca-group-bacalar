@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { destino } from "@/data/content";
 
 export default function Destino() {
@@ -6,6 +7,22 @@ export default function Destino() {
       <div className="wrap">
         <div className="layout">
           <div className="visual reveal">
+            <Image
+              src={destino.image}
+              alt="Laguna de los Siete Colores, Bacalar"
+              fill
+              sizes="(max-width:920px) 100vw, 50vw"
+              style={{ objectFit: "cover" }}
+            />
+            <span
+              aria-hidden
+              style={{
+                position: "absolute",
+                inset: 0,
+                background:
+                  "linear-gradient(to top, rgba(0,0,0,0.55), transparent 45%)",
+              }}
+            />
             <span className="cap">Laguna de los Siete Colores</span>
           </div>
           <div>

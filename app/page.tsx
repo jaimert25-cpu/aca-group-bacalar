@@ -6,6 +6,7 @@ import Muelle from "@/components/Muelle";
 import Tours from "@/components/Tours";
 import Dining from "@/components/Dining";
 import Departamentos from "@/components/Departamentos";
+import Experiencias from "@/components/Experiencias";
 import Destino from "@/components/Destino";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
@@ -22,6 +23,7 @@ export default function Home() {
       <Tours />
       <Dining />
       <Departamentos />
+      <Experiencias />
       <Destino />
       <CTA />
       <Footer />

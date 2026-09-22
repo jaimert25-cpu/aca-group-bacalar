@@ -10,6 +10,12 @@ const WaIcon = () => (
   </svg>
 );
 
+const Arrow = () => (
+  <svg width="20" height="10" viewBox="0 0 20 10" fill="none">
+    <path d="M0 5h18M14 1l4 4-4 4" stroke="currentColor" strokeWidth="1.3" />
+  </svg>
+);
+
 export default function Departamentos() {
   const { openGallery } = useGallery();
 
@@ -124,6 +130,14 @@ export default function Departamentos() {
                     }}
                   >
                     <WaIcon /> WhatsApp (+52 1 983 120 8637)
+                  </a>
+                  <a
+                    className="more"
+                    href={d.instagram}
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Instagram <Arrow />
                   </a>
                   {clickable && (
                     <button
