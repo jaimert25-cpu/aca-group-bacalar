@@ -51,9 +51,9 @@ export type Hotel = {
   tag: string;
   meta: string;
   desc: string;
-  price: string;
   instagram: string;
   whatsapp: string;       // enlace wa.me directo del hotel
+  email: string;          // correo de reservas del hotel
   gallery: string | null; // clave de galleries, o null si aún no hay fotos
   cover: string | null;   // foto de portada
   tone: string;           // gradiente de respaldo si no hay foto
@@ -65,9 +65,9 @@ export const hotels: Hotel[] = [
     tag: "Hostal · social",
     meta: "Hostal · 5 habitaciones",
     desc: "Dormitorios compartidos con nombres mayas y una habitación privada. El alma social y mochilera del grupo, con restaurante de terraza propio.",
-    price: "$300",
     instagram: "https://www.instagram.com/maya_cabana",
     whatsapp: "https://wa.me/529831010914",
+    email: "mayacabana52@gmail.com",
     gallery: "maya",
     cover: "/images/maya-1.jpg",
     tone: "t1",
@@ -77,9 +77,9 @@ export const hotels: Hotel[] = [
     tag: "Frente a la laguna",
     meta: "Hotel · 7 habitaciones",
     desc: "Habitaciones con nombres de frutas, varias con vista directa a la Laguna de los Siete Colores. Nuestro hotel junto al agua.",
-    price: "$1,600",
     instagram: "https://www.instagram.com/tropicbacalar",
     whatsapp: "https://wa.me/529837329998",
+    email: "reservaciones.tropic@gmail.com",
     gallery: "tropic",
     cover: "/images/tropic-3.jpg",
     tone: "t3",
@@ -89,9 +89,9 @@ export const hotels: Hotel[] = [
     tag: "Boutique · cabañas",
     meta: "Hotel boutique · 9 cabañas",
     desc: "Cabañas independientes entre jardines, pensadas para desconectarse. Intimidad y naturaleza a un paso del centro de Bacalar.",
-    price: "$1,050",
     instagram: "https://www.instagram.com/aldeacheeek",
     whatsapp: "https://wa.me/529831012802",
+    email: "aldeacheeek2020@gmail.com",
     gallery: "aldea",
     cover: "/images/aldea-1.jpg",
     tone: "t2",
@@ -101,9 +101,9 @@ export const hotels: Hotel[] = [
     tag: "Acogedor",
     meta: "Hotel · 8 habitaciones",
     desc: "Habitaciones dobles y triples, sencillas y cómodas. La opción cálida y accesible para descubrir Bacalar sin gastar de más.",
-    price: "$650",
     instagram: "https://www.instagram.com/xaanbacalar_",
     whatsapp: "https://wa.me/529837326048",
+    email: "hotelxaan@gmail.com",
     gallery: "xaan",
     cover: "/images/xaan-1.jpg",
     tone: "t5",
@@ -130,14 +130,6 @@ export const restaurants: Dining[] = [
     tone: "t2",
   },
   {
-    name: "Choco Peek",
-    cui: "Restaurante",
-    desc: "Un salón íntimo con barra, para comidas con calma a cualquier hora del día.",
-    gallery: null,
-    cover: null,
-    tone: "t1",
-  },
-  {
     name: "Cache Cache",
     cui: "Bar · lounge",
     desc: "Coctelería y zona lounge para terminar el día. Reservable para grupos.",
@@ -148,48 +140,46 @@ export const restaurants: Dining[] = [
 ];
 
 // ---- Paseos por la laguna ----
-export type Tour = { name: string; cui: string; price: string | null; desc: string; tone: string };
+export type Tour = { name: string; cui: string; desc: string; tone: string };
 
 export const tours: Tour[] = [
   {
     name: "Tour 7 Colores",
     cui: "4 horas · snorkel + refrigerio",
-    price: "$650 / persona",
     desc: "Recorrido por los cenotes principales de la laguna. Incluye equipo de snorkel y un refrigerio a bordo.",
     tone: "t3",
   },
   {
     name: "Atardecer en velero",
     cui: "2 horas · fines de semana",
-    price: "$850 / persona",
     desc: "Paseo en velero para ver la puesta de sol sobre el agua. Mínimo dos personas.",
     tone: "t4",
   },
   {
     name: "Renta de embarcaciones",
     cui: "Renta por hora",
-    price: null,
     desc: "¿Prefieres tu propio recorrido? Renta el catamarán, la lancha o el velero por hora para armar tu día en la laguna.",
     tone: "t1",
   },
 ];
 
 // ---- Departamentos en renta ----
-export type Depa = { name: string; u: string; desc: string; from: string; cls: string };
+export type Depa = {
+  name: string;
+  u: string;
+  desc: string;
+  modalities: string[];
+  email: string;
+  cls: string;
+};
 
 export const departamentos: Depa[] = [
   {
-    name: "Xula",
-    u: "Edificio · 8 departamentos",
-    desc: "Estudios y departamentos de una recámara, en planta baja y alta, para dos personas.",
-    from: "$5,000",
-    cls: "a",
-  },
-  {
     name: "Casa 24",
     u: "Edificio · 8 departamentos",
-    desc: "Estudios y departamentos de una recámara con vista al jardín, cómodos y bien ubicados.",
-    from: "$7,500",
+    desc: "Estudios y departamentos de una recámara con vista al jardín, cómodos y bien ubicados. Espacios completamente equipados para estancias cortas o prolongadas.",
+    modalities: ["Renta por noche", "Renta por mes"],
+    email: "hotelboutiquecasa24@gmail.com",
     cls: "b",
   },
 ];

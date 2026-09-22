@@ -13,6 +13,16 @@ export default function Hero() {
           priority
           sizes="100vw"
         />
+        <video
+          className="hero-video"
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster={site.hero}
+        >
+          <source src="/hero.mp4" type="video/mp4" />
+        </video>
         <div className="shimmer" />
       </div>
       <div className="wrap hero-inner">

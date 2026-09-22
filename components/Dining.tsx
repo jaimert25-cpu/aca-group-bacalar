@@ -16,7 +16,7 @@ export default function Dining() {
             <h2 className="reveal d1">Sabor de Bacalar, frente al agua</h2>
           </div>
           <p className="reveal d2">
-            Dos restaurantes y un bar, abiertos a huéspedes y a todo el que pase
+            Restaurante y bar, abiertos a huéspedes y a todo el que pase
             a visitarnos.
           </p>
         </div>

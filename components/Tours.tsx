@@ -10,8 +10,7 @@ export default function Tours() {
             <h2 className="reveal d1">Sal al agua con nosotros</h2>
           </div>
           <p className="reveal d2">
-            Recorridos guiados que salen directo de nuestro muelle. Precio por
-            persona.
+            Recorridos guiados que salen directo de nuestro muelle para descubrir los siete colores de la laguna.
           </p>
         </div>
         <div className="grid-dining">
@@ -19,7 +18,6 @@ export default function Tours() {
             <article key={t.name} className={"dish reveal" + (i ? " d" + i : "")}>
               <div className="ph">
                 <div className={"tone " + t.tone} />
-                {t.price && <span className="pill-price">{t.price}</span>}
               </div>
               <div className="body">
                 <div className="cui">{t.cui}</div>
