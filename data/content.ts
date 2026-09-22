@@ -43,6 +43,26 @@ export const galleries: Record<string, Photo[]> = {
     { src: "/images/aldea-3.jpg", cap: "Aldea Chee-eek · Cabaña con vigas de madera" },
     { src: "/images/aldea-4.jpg", cap: "Aldea Chee-eek · Tinas de piedra al aire libre" },
   ],
+  casa24: [
+    { src: "/images/casa24-1.jpg", cap: "Casa 24 · Habitación y estancia con cama matrimonial" },
+    { src: "/images/casa24-2.jpg", cap: "Casa 24 · Vista de la habitación y decoración" },
+    { src: "/images/casa24-3.jpg", cap: "Casa 24 · Baño completo y acabados" },
+    { src: "/images/casa24-4.jpg", cap: "Casa 24 · Área de estar y luz natural" },
+    { src: "/images/casa24-5.jpg", cap: "Casa 24 · Estudio amueblado y equipado" },
+    { src: "/images/casa24-6.jpg", cap: "Casa 24 · Detalle de habitación y clóset" },
+    { src: "/images/casa24-7.jpg", cap: "Casa 24 · Espacio acogedor para estancias" },
+    { src: "/images/casa24-8.jpg", cap: "Casa 24 · Habitación doble con vista al jardín" },
+    { src: "/images/casa24-9.jpg", cap: "Casa 24 · Cama y área de descanso" },
+    { src: "/images/casa24-10.jpg", cap: "Casa 24 · Acabados frescos y ventilación" },
+    { src: "/images/casa24-11.jpg", cap: "Casa 24 · Estudio cómodo y funcional" },
+    { src: "/images/casa24-12.jpg", cap: "Casa 24 · Interior amplio y luminoso" },
+    { src: "/images/casa24-13.jpg", cap: "Casa 24 · Detalles de la estancia" },
+    { src: "/images/casa24-14.jpg", cap: "Casa 24 · Habitación amueblada" },
+    { src: "/images/casa24-15.jpg", cap: "Casa 24 · Confort y tranquilidad" },
+    { src: "/images/casa24-16.jpg", cap: "Casa 24 · Espacio ideal para temporadas" },
+    { src: "/images/casa24-17.jpg", cap: "Casa 24 · Habitación con aire acondicionado y cama cómoda" },
+    { src: "/images/casa24-18.jpg", cap: "Casa 24 · Vista general del departamento" },
+  ],
 };
 
 // ---- Hospedaje ----
@@ -169,7 +189,9 @@ export type Depa = {
   u: string;
   desc: string;
   modalities: string[];
-  email: string;
+  whatsapp: string;
+  gallery: string | null;
+  cover: string | null;
   cls: string;
 };
 
@@ -179,7 +201,9 @@ export const departamentos: Depa[] = [
     u: "Edificio · 8 departamentos",
     desc: "Estudios y departamentos de una recámara con vista al jardín, cómodos y bien ubicados. Espacios completamente equipados para estancias cortas o prolongadas.",
     modalities: ["Renta por noche", "Renta por mes"],
-    email: "hotelboutiquecasa24@gmail.com",
+    whatsapp: "https://wa.me/5219831208637",
+    gallery: "casa24",
+    cover: "/images/casa24-1.jpg",
     cls: "b",
   },
 ];
