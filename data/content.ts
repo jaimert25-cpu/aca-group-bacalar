@@ -26,10 +26,11 @@ export const galleries: Record<string, Photo[]> = {
     { src: "/images/xaan-11.jpg", cap: "Xa'an · Tinas al aire libre entre la naturaleza" },
   ],
   maya: [
-    { src: "/images/maya-1.jpg", cap: "Maya Cabaña · Taquería y bar al anochecer" },
-    { src: "/images/maya-2.jpg", cap: "Maya Cabaña · Tacos de la casa" },
-    { src: "/images/maya-3.jpg", cap: "Maya Cabaña · Bar de micheladas" },
-    { src: "/images/maya-4.jpg", cap: "Maya Cabaña · Piña colada frente al mural" },
+    { src: "/images/mayaliving-1.jpg", cap: "Maya Living · Recámara con mosquitero bajo palapa" },
+    { src: "/images/mayaliving-2.jpg", cap: "Maya Living · Jardín y zona común entre palapas" },
+    { src: "/images/mayaliving-3.jpg", cap: "Maya Living · Cabaña equipada con clima" },
+    { src: "/images/mayaliving-4.jpg", cap: "Maya Living · Cocina equipada" },
+    { src: "/images/mayaliving-5.jpg", cap: "Maya Living · Baño con acabados de concreto" },
   ],
   mayarest: [
     { src: "/images/mayarest-1.jpg", cap: "Maya Cabaña · Tacos al pastor con piña" },
@@ -80,15 +81,15 @@ export type Hotel = {
 
 export const hotels: Hotel[] = [
   {
-    name: "Maya Cabaña",
-    tag: "Hostal · social",
-    meta: "Hostal · 5 habitaciones",
-    desc: "Dormitorios compartidos con nombres mayas y una habitación privada. El alma social y mochilera del grupo, con restaurante de terraza propio.",
+    name: "Maya Living",
+    tag: "Cabañas · renta larga",
+    meta: "Cabañas privadas · renta a largo plazo",
+    desc: "Cabañas privadas con palapa, cocina equipada y clima, en renta a largo plazo. Vive Bacalar con la comodidad de un hogar entre la selva.",
     instagram: "https://www.instagram.com/maya_cabana",
     whatsapp: "https://wa.me/529831010914",
     email: "mayacabana52@gmail.com",
     gallery: "maya",
-    cover: "/images/maya-1.jpg",
+    cover: "/images/mayaliving-1.jpg",
     tone: "t1",
   },
   {
@@ -143,7 +144,7 @@ export const restaurants: Dining[] = [
   {
     name: "Maya Cabaña Restaurante",
     cui: "Terraza · dentro del hostal",
-    desc: "Cocina abierta en terraza y salón principal, dentro del hostal Maya Cabaña.",
+    desc: "Cocina abierta en terraza y salón principal, en el corazón de Bacalar.",
     gallery: "mayarest",
     cover: "/images/mayarest-1.jpg",
     tone: "t2",

@@ -19,10 +19,10 @@ export default function Home() {
       <Hero />
       <Manifesto />
       <Hotels />
+      <Departamentos />
+      <Dining />
       <Muelle />
       <Tours />
-      <Dining />
-      <Departamentos />
       <Experiencias />
       <Destino />
       <CTA />
